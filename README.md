@@ -41,7 +41,3 @@ Contribuições são bem-vindas! Abra um problema ou envie um pull request para 
 ## Licença
 
 Este projeto é licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
-
----
-
-Este README é apenas um exemplo básico. Sinta-se à vontade para adicionar mais detalhes, instruções de uso avançado, exemplos de configuração, ou qualquer outra informação relevante para o seu projeto.

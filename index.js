@@ -15,8 +15,8 @@ client.on('ready', async () => {
   
   try {
     // Ler o arquivo contacts.json
-    const contactsData = await fs.readFile('contacts.json', 'utf8');
-    // const contactsData = await fs.readFile('contacts-test.json', 'utf8');
+    // const contactsData = await fs.readFile('contacts.json', 'utf8');
+    const contactsData = await fs.readFile('contacts-test.json', 'utf8');
     const contacts = JSON.parse(contactsData);
 
     // Enviar mensagem para cada contato
