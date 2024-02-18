@@ -24,9 +24,7 @@ Este é um projeto de automação para envio de mensagens no WhatsApp usando Nod
 
 ## Configuração
 
-1. Renomeie o arquivo `.env.example` para `.env`.
-2. Edite o arquivo `.env` e insira suas credenciais do WhatsApp.
-3. Certifique-se de ter uma lista de contatos no formato JSON (por exemplo, `contacts.json`).
+1. Certifique-se de ter uma lista de contatos no formato JSON (por exemplo, `contacts.json`).
 
 ## Uso
 
