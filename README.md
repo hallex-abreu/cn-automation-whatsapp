@@ -12,7 +12,7 @@ Este é um projeto de automação para envio de mensagens no WhatsApp usando Nod
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/seu-usuario/cn-automation-whatsapp.git
+    git clone https://github.com/hallex-abreu/cn-automation-whatsapp.git
     ```
 
 2. Instale as dependências:
