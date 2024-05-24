@@ -3,7 +3,11 @@ const qrcode = require('qrcode-terminal');
 const fs = require('fs').promises;
 
 const client = new Client({
-    authStrategy: new LocalAuth()
+    authStrategy: new LocalAuth(),
+    webVersionCache: {
+      type: 'remote',
+      remotePath: 'https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.2412.54.html',
+    }
 });
 
 client.on('qr', (qr) => {
@@ -15,13 +19,13 @@ client.on('ready', async () => {
   
   try {
     // Ler o arquivo contacts.json
-    // const contactsData = await fs.readFile('contacts.json', 'utf8');
-    const contactsData = await fs.readFile('contacts-test.json', 'utf8');
+    const contactsData = await fs.readFile('contacts-send.json', 'utf8');
+    // const contactsData = await fs.readFile('contacts-test.json', 'utf8');
     const contacts = JSON.parse(contactsData);
 
     // Enviar mensagem para cada contato
     for (const contact of contacts) {
-      await sendMessage(contact.phone, `Olá ${contact.name}, aqui é o Hallex! A Paz! Como você está? Estou passando para agradecer em nome da equipe da produção e dizer o quanto você é essencial para o nosso ministério. Sua presença e apoio são inestimáveis para nós. Saiba que estamos sempre à disposição para ajudar no que precisar. Vocês são os melhores! Deus os abençoe. Ótimo domingo! 😁🙏🏻🔥🚀`);
+      await sendMessage(contact.phone, `Olá, ${contact.name}, boa noite! A paz! Passando aqui para saber como você está e desejar um excelente restante de semana. Somos gratos pelo seu servir e por ter você na família Produção. Estamos à disposição para qualquer coisa que precisar. Deus abençoe. 😁🙏🏻🔥🚀`);
       console.log(`Mensagem enviada para ${contact.name} (${contact.phone})`);
     }
 
